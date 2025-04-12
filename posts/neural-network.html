@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getting Started with Web Development - Kazedev</title>
+    <meta
+      name="description"
+      content="A beginner's guide to starting your journey in web development"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="../blog.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>Kazedev</h1>
+        <nav class="nav-bar">
+          <a href="../index.html" class="nav-link">Home</a>
+          <a href="../blog.html" class="nav-link">Blog</a>
+        </nav>
+      </div>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <svg
+          class="sun-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg
+          class="moon-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+    </header>
+
+    <main class="post-content">
+      <article>
+        <h1 class="post-title">Neural Network on a nutshell</h1>
+        <div class="post-meta">
+          <span class="post-date">March 27, 2025</span>
+        </div>
+        <div class="post-body">
+          <p>
+            You've probably heard of neural network in if you are in tech or
+            computer science field, machine learning, or even deep learning. But
+            what exactly are they, and how do they work? Let's break it down in
+            the simplest way possible.
+          </p>
+          <h2>So what is a Neural Network?</h2>
+          <p>
+            Think of a neural network as a digital version of the human brain.
+            Just like our brain has billions and trillions of neurons connected
+            together, a neural network is made up of artificial neurons (also
+            called nodes) that work together to solve problems. These networks
+            are particularly good at recognizing patterns, decision-making, and
+            predicting outcomes based on data.
+          </p>
+          <h2>How Does It Work?</h2>
+          <h3>A neural network consists of three main layers:</h3>
+          <br />
+          <p>
+            1. Input Layer– This is where the data enters. Each neuron in this
+            layer represents a different feature of the input. For example, if
+            the network is processing images, one neuron might represent color,
+            another might detect edges, and so on. <br /><br />
+
+            2. Hidden Layers – This is where the real magic happens. These
+            layers process the data by applying mathematical operations
+            *everything is a number yk* to identify patterns and relationships.
+            The more hidden layers a network has, the deeper it is (hence the
+            term "deep learning"). <br /><br />
+
+            3. Output Layer – This layer gives the final result. If a neural
+            network is designed to recognize cats in images, the output layer
+            will tell you the probability of an image containing a cat *make
+            sense right*. <br /><br />
+          </p>
+
+          <h2>Training a Neural Network</h2>
+          <p>
+            Neural networks learn from examples. Imagine you are teaching a
+            child to recognize a dog. You show them many pictures of dogs and
+            tell them, "This is a dog." Similarly, a neural network is trained
+            by feeding it lots of labeled data.
+            <br /><br />
+            During training, the network makes guesses, checks if they are
+            correct, and then adjusts itself using a process called
+            **backpropagation**. It keeps improving until it gets really good at
+            making predictions.
+          </p>
+
+          <h2>Why Are Neural Networks So Powerful?</h2>
+          <p>
+            Neural networks are great at: <br /><br />
+
+            - Recognizing images (like in facial recognition apps) <br /><br />
+            - Understanding speech (think Siri or Alexa) <br /><br />
+            - Predicting trends (used in finance and stock markets) <br /><br />
+            - Generating new content (like AI-generated image or text)
+            <br /><br />
+          </p>
+
+          <h2>Final Thoughts</h2>
+          <p>
+            Even though neural networks sound complex, they are really just a
+            way of teaching computers to recognize patterns and make smart
+            decisions.
+            <br /><br />
+            Hope this helped! i will see you in the next one.
+          </p>
+        </div>
+      </article>
+    </main>
+
+    <script src="../theme.js"></script>
+  </body>
+</html>

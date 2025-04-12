@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+
+:root {
+  --bg-color: #f5f5f5;
+  --text-color: #333;
+  --link-color: #ff5501;
+  --border-color: #eee;
+  --card-bg: #fff;
+  --secondary-text: #666;
+  --muted-text: #888;
+}
+
+[data-theme="dark"] {
+  --bg-color: #1a1a1a;
+  --text-color: #f5f5f5;
+  --link-color: #ff5501;
+  --border-color: #333;
+  --card-bg: #2a2a2a;
+  --secondary-text: #ccc;
+  --muted-text: #999;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  padding: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  position: relative;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.site-title {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.site-title:hover {
+  color: #ff5501;
+}
+
+.nav-bar {
+  margin-bottom: 1rem;
+}
+
+.nav-link {
+  color: var(--text-color);
+  text-decoration: none;
+  margin-right: 1rem;
+  font-weight: 700;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: #ff5501;
+}
+
+.main-text {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin-bottom: 2rem;
+}
+
+.name {
+  font-weight: 700;
+  color: #ff5501;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: #ff5501;
+}
+
+/* Featured Post Styles */
+.featured-post {
+  max-width: 800px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.post-card {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.post-title {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #ff5501;
+}
+
+.post-excerpt {
+  color: var(--secondary-text);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.post-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  flex-wrap: wrap;
+}
+
+.post-date {
+  color: var(--muted-text);
+}
+
+.read-more {
+  color: #ff5501;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* Contact Section */
+.contact {
+  max-width: 800px;
+  margin-top: 2rem;
+}
+
+.contact-text {
+  font-size: 1.1rem;
+  color: var(--text-color);
+}
+
+.x-link {
+  color: #ff5501;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.x-link:hover {
+  text-decoration: underline;
+}
+
+.email-link {
+  color: #ff5501;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.theme-toggle:hover {
+  color: #ff5501;
+}
+
+.theme-toggle svg {
+  width: 24px;
+  height: 24px;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Icon visibility */
+.sun-icon {
+  display: block;
+}
+
+.moon-icon {
+  display: none;
+}
+
+[data-theme="dark"] .sun-icon {
+  display: none;
+}
+
+[data-theme="dark"] .moon-icon {
+  display: block;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  body {
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .main-text {
+    font-size: 1.2rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .post-title {
+    font-size: 1.5rem;
+  }
+
+  .contact-text {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    flex-direction: row;
+  }
+
+  .header-content {
+    padding-right: 3rem;
+  }
+
+  .theme-toggle {
+    position: absolute;
+  }
+
+  .post-meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .read-more {
+    margin-top: 0.5rem;
+  }
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  opacity: 0.5;
+}
