@@ -1,2 +1,1 @@
-# Kazedev
-personal website
+website url - kazedev.site
