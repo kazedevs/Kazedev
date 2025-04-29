@@ -2,7 +2,7 @@
 function createPostCard(post) {
   return `
         <div class="post-card">
-            <h3 class="post-title">${post.title}</h3>
+            <h3 class="post-title"><a href="${post.link}" class="post-title-link">${post.title}</a></h3>
             <p class="post-excerpt">${post.excerpt}</p>
             <div class="post-meta">
                 <span class="post-date">${post.date}</span>

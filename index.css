@@ -125,7 +125,20 @@ h1 {
 .post-title {
   font-size: 1.4rem;
   margin-bottom: 1rem;
+}
+
+/* Ensure consistent link styling across pages */
+.post-title-link,
+.post-title-link:visited {
   color: #ff5501;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.post-title-link:hover,
+.post-title-link:active {
+  color: #ff7733;
+  text-decoration: underline;
 }
 
 .post-excerpt {

@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="theme-loader.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Kaze" />
+    <meta name="theme-color" content="#ff8c00" />
     <title>Blog - Kazedev</title>
     <meta name="description" content="Kazedev blog posts" />
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kazedev.site/blog.html" />
+    <meta property="og:title" content="Blog - Kazedev" />
+    <meta property="og:description" content="Explore Kaze's thoughts on programming, life, and everything in between" />
+    <meta property="og:image" content="https://kazedev.site/kaze_pfp.jpg" />
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Blog - Kazedev" />
+    <meta name="twitter:description" content="Explore Kaze's thoughts on programming, life, and everything in between" />
+    <meta name="twitter:image" content="https://kazedev.site/kaze_pfp.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,7 +30,9 @@
     />
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="blog.css" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="canonical" href="https://kazedev.site/blog.html" />
+    <link rel="icon" type="image/png" href="kazedev_pfp.png" />
   </head>
   <body>
     <header>
@@ -76,5 +95,6 @@
     <script src="posts.js"></script>
     <script src="blog.js"></script>
     <script src="theme.js"></script>
+    <script src="schema.js"></script>
   </body>
 </html>

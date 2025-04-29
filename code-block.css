@@ -1,0 +1,243 @@
+/* Code Block Styling */
+.code-block-container {
+  position: relative;
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.code-block-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #2d2d2d;
+  color: #e6e6e6;
+  font-size: 14px;
+}
+
+.language-label {
+  font-size: 0.75rem;
+  color: #9cdcfe;
+  font-weight: 500;
+}
+
+.copy-button {
+  background: transparent;
+  border: none;
+  color: #e6e6e6;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.85rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.copy-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.copy-button svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+pre {
+  margin: 0 !important;
+  border-radius: 0 !important;
+  background-color: #1e1e1e !important;
+  padding: 1rem !important;
+  max-height: 400px;
+  overflow-x: auto;
+  overflow-y: auto;
+  color: #e6e6e6;
+  font-size: 0.9rem;
+}
+
+code {
+  font-family: 'Space Mono', monospace;
+  line-height: 1.5;
+  word-break: break-word;
+  white-space: pre-wrap;
+}
+
+/* Generic Syntax Highlighting (works for multiple languages) */
+.keyword, .tag, .doctype {
+  color: #569cd6;
+}
+
+.function {
+  color: #dcdcaa;
+}
+
+.string {
+  color: #ce9178;
+}
+
+.comment {
+  color: #6a9955;
+}
+
+.class, .selector {
+  color: #4ec9b0;
+}
+
+.number, .boolean {
+  color: #b5cea8;
+}
+
+.variable, .attribute, .property {
+  color: #9cdcfe;
+}
+
+.operator, .punctuation {
+  color: #d4d4d4;
+}
+
+/* Python-specific styles */
+.python-code .decorator {
+  color: #c586c0;
+}
+
+/* JavaScript-specific styles */
+.javascript-code .keyword {
+  color: #569cd6;
+}
+
+.javascript-code .regex {
+  color: #d7ba7d;
+}
+
+/* HTML-specific styles */
+.html-code .tag-name {
+  color: #569cd6;
+}
+
+.html-code .attribute-name {
+  color: #9cdcfe;
+}
+
+/* CSS-specific styles */
+.css-code .property {
+  color: #9cdcfe;
+}
+
+.css-code .value {
+  color: #ce9178;
+}
+
+/* Dark Theme Overrides */
+.dark-theme .code-block-container {
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* No need to override these since they're the same in both themes now:
+.dark-theme .code-block-header {}
+.dark-theme .copy-button {}
+.dark-theme pre {}
+*/
+
+/* Container style adjustments for light theme */
+.code-block-container {
+  /* Darker border for light theme to create better contrast */
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Dark Theme Generic Syntax Highlighting */
+.dark-theme .keyword, .dark-theme .tag, .dark-theme .doctype {
+  color: #569cd6;
+}
+
+.dark-theme .function {
+  color: #dcdcaa;
+}
+
+.dark-theme .string {
+  color: #ce9178;
+}
+
+.dark-theme .comment {
+  color: #6a9955;
+}
+
+.dark-theme .class, .dark-theme .selector {
+  color: #4ec9b0;
+}
+
+.dark-theme .number, .dark-theme .boolean {
+  color: #b5cea8;
+}
+
+.dark-theme .variable, .dark-theme .attribute, .dark-theme .property {
+  color: #9cdcfe;
+}
+
+.dark-theme .operator, .dark-theme .punctuation {
+  color: #d4d4d4;
+}
+
+/* Dark Theme Python-specific */
+.dark-theme .python-code .decorator {
+  color: #c586c0;
+}
+
+/* Dark Theme JavaScript-specific */
+.dark-theme .javascript-code .regex {
+  color: #d7ba7d;
+}
+
+/* Dark Theme HTML-specific */
+.dark-theme .html-code .tag-name {
+  color: #569cd6;
+}
+
+.dark-theme .html-code .attribute-name {
+  color: #9cdcfe;
+}
+
+/* Dark Theme CSS-specific */
+.dark-theme .css-code .property {
+  color: #9cdcfe;
+}
+
+.dark-theme .css-code .value {
+  color: #ce9178;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .code-block-container {
+    margin: 1rem 0;
+    border-radius: 6px;
+  }
+  
+  .code-block-header {
+    padding: 0.4rem 0.75rem;
+  }
+  
+  pre {
+    padding: 0.75rem !important;
+    font-size: 0.8rem;
+  }
+  
+  code {
+    line-height: 1.4;
+  }
+  
+  .copy-button {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.4rem;
+  }
+  
+  .copy-button svg {
+    width: 0.9rem;
+    height: 0.9rem;
+  }
+}

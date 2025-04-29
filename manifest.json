@@ -1,0 +1,21 @@
+{
+  "name": "Kazedev Blog",
+  "short_name": "Kazedev",
+  "description": "Tech blog focused on programming, web development, and machine learning",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ff8c00",
+  "icons": [
+    {
+      "src": "kazedev_pfp.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "kazedev_pfp.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
